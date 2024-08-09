@@ -10,7 +10,7 @@
     "vercel-build": "echo Hello desde Vercel"
   },
   "keywords": [],
-  "author": "",
+  "author": "Guevara Agostina",
   "license": "MIT",
   "dependencies": {
     "dotenv": "^16.4.5",
