@@ -6,7 +6,7 @@ const index = (req, res) => {
 
     db.query(sql, (error, rows) => {
         if (error) {
-            res.status(500).json({ error: 'Intente más tarde' });
+            res.status(500).json({ error: 'Intente más tardeeeeee' });
         }
 
         res.json(rows);
