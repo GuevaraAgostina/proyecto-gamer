@@ -1,0 +1,312 @@
+<!DOCTYPE html>
+<html lang="es">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Level Store</title>
+    <link rel="icon" href="./img/favicon.ico"/>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH"
+      crossorigin="anonymous"/>
+    <link rel="stylesheet" type="text/css" href="../css/style.css"/>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Roboto+Flex:opsz,wght@8..144,100..1000&display=swap" rel="stylesheet">
+  </head>
+  <body>
+    <header>
+      <nav>
+        <div class="logo-slogan">
+          <a href="#inicio">
+            <img src="../Img/backlogonegro.png" alt="Logo" class="logo">
+          </a>
+          <p id="slogan">Alcanza el siguiente nivel con Level.</p>
+        </div>
+        <input type="checkbox" id="menu-toggle">
+        <label for="menu-toggle" class="menu-icon">&#9776;</label>
+        <ul class="menu">
+          <li><a href="#inicio">Inicio</a></li>
+          <li><a href="#productos">Productos</a></li>
+          <li><a href="#nosotros">Nosotros</a></li>
+          <li><a href="#garantia">Garantía</a></li>
+          <li><a href="#contacto">Contacto</a></li>
+        </ul>
+      </nav>
+    </header>
+
+    <main>
+      <section id="inicio">
+        <!-- Carousel agregado con bootstrap -->
+        <div id="carouselExample" class="carousel slide">
+          <div class="carousel-inner">
+            <div class="carousel-item active">
+              <img src="../Img/banners/banner1.png" class="d-block w-100" alt="Banner1"/>
+            </div>
+            <div class="carousel-item">
+              <img src="../Img/banners/banner2.png" class="d-block w-100" alt="Banner2"/>
+            </div>
+            <div class="carousel-item">
+              <img src="../Img/banners/banner3.png" class="d-block w-100" alt="Banner3"/>
+            </div>
+            <div class="carousel-item">
+              <img src="../Img/banners/banner4.png" class="d-block w-100" alt="Banner4"/>
+            </div>
+            <div class="carousel-item">
+              <img src="../Img/banners/banner5.png" class="d-block w-100" alt="Banner5"/>
+            </div>
+          </div>
+          <button
+            class="carousel-control-prev"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="prev"
+          >
+            <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Previous</span>
+          </button>
+          <button
+            class="carousel-control-next"
+            type="button"
+            data-bs-target="#carouselExample"
+            data-bs-slide="next"
+          >
+            <span class="carousel-control-next-icon" aria-hidden="true"></span>
+            <span class="visually-hidden">Next</span>
+          </button>
+        </div>
+        <h1>Bienvenidos a Level Store</h1>
+        <form class="buscar" action="/buscar" method="get">
+          <input type="text" name="q" placeholder=" 🔍 Buscar productos" />
+          <button type="submit">Buscar</button>
+        </form>
+      </section>
+    </main>
+
+    <section id="productos">
+        <div class="container">
+          <h2>Productosssssss</h2>
+          <div id="Productos" class="items_products">
+            <div class="product">
+              <div class="image">
+                <a href="details.html">
+                  <img src="../Img/productos/videojuegos.jpg" alt="Videojuegos"/>
+                </a>
+              </div>
+              <div class="description">
+                <p>Videojuegos</p>
+              </div>
+              <div class="ver">
+                <p>Ver más</p>
+              </div>
+            </div>
+            <div class="product">
+              <div class="image">
+                <a href="details.html">
+                  <img src="../Img/productos/consolas.jpg" alt="Cónsolas"/>
+                </a>
+              </div>
+              <div class="description">
+                <p>Cónsolas</p>
+              </div>
+              <div class="ver">
+                <p>Ver más</p>
+              </div>
+            </div>
+            <div class="product">
+              <div class="image">
+                <a href="details.html">
+                  <img src="../Img/productos/sillas.jpg" alt="Sillas gamer" />
+                </a>
+              </div>
+              <div class="description">
+                <p>Sillas Gamer</p>
+              </div>
+              <div class="ver">
+                <p>Ver más</p>
+              </div>
+            </div>
+            <div class="product">
+              <div class="image">
+                <a href="details.html">
+                  <img src="../Img/productos/computacion.jpg" alt="Computación" />
+                </a>
+              </div>
+              <div class="description">
+                <p>Computación</p>
+              </div>
+              <div class="ver">
+                <p>Ver más</p>
+              </div>
+            </div>
+          </div>
+        </div>
+    </section>
+
+    <section class="contenido" id="nosotros">
+        <div class="container">
+          <h2>Nosotros</h2>
+        </div>
+        <p>
+          Somos una tienda en línea dedicada a ofrecer una amplia gama de
+          productos gamer de alta calidad a entusiastas de los videojuegos de todo el mundo. En Level Store, nos apasiona proporcionar a nuestros clientes la mejor experiencia de compra y los productos más innovadores del mercado.
+        </p>
+        <h3>Nuestra misión</h3>
+        <p> Ser la tienda de referencia para los gamers, ofreciendo una selección de productos cuidadosamente curada, atención al cliente excepcional y un compromiso continuo con la innovación y la excelencia.
+        </p>
+        <h3>Nuestro equipo</h3>
+        <p> En Level Store, contamos con un equipo apasionado de gamers y
+          profesionales del comercio electrónico que comparten un objetivo
+          común: proporcionar a nuestros clientes la mejor experiencia de compra posible. 
+        </p>
+        <h3>¿Por qué elegirnos?</h3>
+        <div class="valores">
+            <div class="items">
+                <img src="../Img/compromiso.png" alt="" class="iconoitems">
+                <h4>Compromiso</h4>
+                <p> Estamos comprometidos con la calidad de productos y servicios.</p>
+            </div>
+            <div class="items">
+                <img src="../Img/pasion.png" alt="" class="iconoitems">
+                <h4>Pasión</h4>
+                <p>Nuestra pasión gamer nos hará brindarte las mejores opciones.</p>
+            </div>
+            <div class="items">
+                <img src="../Img/integridad.png" alt="" class="iconoitems">
+                <h4>Integridad</h4>
+                <p>Cumplimos con la normativa para asegurar tu proceso en la web.</p>
+            </div>
+            <div class="items">
+                <img src="../Img/excelencia.png" alt="" class="iconoitems">
+                <h4>Excelencia</h4>
+                <p>Te mantendremos informado sobre las mejores promociones.</p>
+            </div>
+        </div>
+    </section>
+
+    <section class="contenido" id="garantia">
+        <div class="container">
+          <h2>Garantía</h2>
+        </div>
+        <h3>En Level Store nos comprometemos a ofrecer productos de alta calidad y garantizar la satisfacción del cliente. Nuestras garantías incluyen:</h3>
+        <ul>
+          <li>Garantía de Satisfacción del Cliente: Si no estás satisfecho con tu compra, contáctanos y haremos todo lo posible para resolver el problema.</li>
+            <li>Garantía de Calidad: Todos nuestros productos están garantizados contra defectos de fabricación.</li>
+            <li>Garantía de Reparación o Reemplazo: Si un producto llega defectuoso, te ofrecemos la opción de repararlo o reemplazarlo sin costo adicional.</li>
+          </ul>
+    </section>
+
+    <section id="contacto">
+        <div class="container">
+          <h2>Contacto</h2>
+          <div class="contact-wrapper">
+            <form action="" class="formulario" id="formulario-contacto" method="POST">
+              <div class="form">
+                <div class="grupo">
+                  <label for="contacto-name">Nombre</label>
+                  <input
+                    type="text"
+                    id="contacto-name"
+                    name="name"
+                    required
+                    onkeyup="validacionName()"
+                    placeholder="Nombre y Apellido"
+                  />
+                  <span class="barra" id="error-nombre"></span>
+                </div>
+                <div class="grupo">
+                  <label for="contacto-email">Email</label>
+                  <input
+                    type="email"
+                    id="contacto-email"
+                    name="email"
+                    required
+                    onkeyup="validacionEmail()"
+                    placeholder="ejemplo@x.com"
+                  />
+                  <span class="barra" id="error-email"></span>
+                </div>
+                <div class="grupo">
+                  <label for="numero">Teléfono</label>
+                  <input
+                    type="tel"
+                    id="numero"
+                    name="numero"
+                    required
+                    onkeyup="validacionNumero()"
+                    placeholder="1234567890"
+                  />
+                  <span class="barra" id="error-numero"></span>
+                </div>
+                <div class="grupo">
+                  <label for="gender">Género:</label>
+                  <input type="radio" id="gender" name="gender" value="male" />
+                  Masculino
+                  <input type="radio" id="female" name="gender" value="female" />
+                  Femenino
+                </div>
+                <div class="grupo">
+                  <label for="country">País:</label>
+                  <select id="country" name="country" required>
+                    <option value="">Seleccione un país</option>
+                    <option value="argentina">Argentina</option>
+                    <option value="colombia">Colombia</option>
+                    <option value="spain">España</option>
+                    <option value="mexico">México</option>
+                    <option value="otro">Otro</option>
+                  </select>
+                </div>
+                <div class="grupo">
+                  <label for="contacto-mensaje">Mensaje</label>
+                  <textarea
+                    name="mensaje"
+                    id="contacto-mensaje"
+                    rows="3"
+                    required
+                    onkeyup="validacionMensaje()"
+                  ></textarea>
+                  <span class="barra" id="error-mensaje"></span>
+                </div>
+                <div class="grupo">
+                  <label for="subscribe">
+                    <input type="checkbox" id="subscribe" name="subscribe" />
+                    Suscribirse al boletín
+                  </label>
+                </div>
+                <div class="grupo">
+                  <label for="file-upload">Subir imagen:</label>
+                  <input type="file" id="file-upload" name="file-upload" />
+                </div>
+                <button type="submit" class="btn btn-primary">Enviar</button>
+              </div>
+            </form>
+            <div class="map">
+              <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d52563.48442646017!2d-58.46221517184497!3d-34.573355754049416!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x95bcb59c771eb933%3A0x6b3113b596d78c69!2sPalermo%2C%20Cdad.%20Aut%C3%B3noma%20de%20Buenos%20Aires!5e0!3m2!1ses-419!2sar!4v1716158344720!5m2!1ses-419!2sar" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe>
+            </div>
+          </div>
+        </div>
+    </section>    
+
+    <footer>
+      <div class="container-footer">
+        <div class="logos-footer">
+          <a href="#" target="_blank"><img src="../Img/facebook.png" alt="Facebook" title="Ir a Facebook"/></a>
+          <a href="#" target="_blank"><img src="../Img/instagram.png" alt="Instagram" title="Ir a Instagram"/></a>
+          <a href="#" target="_blank"><img src="../Img/whatsapp.png" alt="Whatsapp" title="Ir a Whatsapp"/></a>
+        </div>
+        <p>Palermo, Ciudad de Buenos Aires.</p>
+        <p>© 2024 Level Store. Todos los derechos reservados.</p>
+        <a href="#inicio"
+          ><img id="arriba" src="../Img/arriba.png" title="Ir arriba" alt=""
+        /></a>
+      </div>
+    </footer>
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz"
+      crossorigin="anonymous"
+    ></script>
+    <script src="../js/validacion.js"></script>
+  </body>
+</html>

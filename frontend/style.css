@@ -1,0 +1,506 @@
+body {
+    font-family: 'Roboto-flex';
+    margin: 0;
+    padding: 0;
+    background-color: #000000;
+    color: white;
+  }
+  
+  /* Estilo del logo */
+  .logo {
+    width: 70px;
+    height: auto;
+    margin-right: 10px; 
+  }
+  
+  /* Estilo del slogan */
+  #slogan {
+    font-style: italic;
+    color: #eb1befad;
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Estilo de la navbar */
+  nav {
+    background-color: #292080; 
+    display: flex;
+    justify-content: space-between; 
+    align-items: center; 
+    padding: 0 20px; 
+    position: fixed; 
+    width: 100%; 
+    top: 0; 
+    z-index: 1000; 
+  }
+  
+  .logo-slogan {
+    display: flex;
+    align-items: center;
+  }
+  
+  nav ul {
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    display: flex; 
+  }
+  
+  nav ul li {
+    display: inline-block;
+    padding: 20px 30px;
+  }
+  
+  nav ul li a {
+    color: #ffffff; 
+    text-decoration: none; 
+    font-weight: bold; 
+    font-size: 18px;
+    transition: 0.7s;
+  }
+  
+  nav ul li a:hover {
+    color: #eb1befad;
+  }
+  
+  /* Estilo del menú toggle y la hamburguesa */
+  .menu-icon {
+    display: none;
+    font-size: 24px;
+    cursor: pointer;
+  }
+  
+  #menu-toggle {
+    display: none;
+  }
+  
+  /* Estilo para el carousel */
+  #carouselExample {
+    width: 100%;
+    height: 100%;
+  }
+  
+  .carousel-inner {
+    width: 100%;
+    height: 100%;
+    padding-top: 4.5%;
+  }
+  
+  .carousel-item img {
+    object-fit: cover;
+    width: 100%;
+    height: 100%;
+  }
+  
+  /* Estilo para section inicio */
+  #inicio {
+    background-size: cover;
+    background-position: center;
+    color: #ffffff;
+    text-align: center;
+    padding-bottom: 5%;
+  }
+  
+  h1 {
+    font-size: 70px;
+    color: #ffffff;
+    margin: 100px auto;
+    padding: 20px 10px;
+  }
+  
+  /* Estilo de la barra de búsqueda */
+  form.buscar {
+    margin-top: 20px;
+    text-align: center;
+    display: flex; 
+    justify-content: center; 
+    align-items: center;
+  }
+  
+  form.buscar input {
+    background-color: #000000;
+    color: #ffffff; 
+    padding: 10px 20px; 
+    border: none;
+    box-shadow: 0 6px 8px #3a25f380;
+    border-radius: 20px; 
+    width: 45%;
+    transition: 0.7s ease; 
+  }
+  
+  form.buscar input:focus {
+    outline: none; 
+    background-color: #131313cc; 
+    box-shadow: 0 3px 5px #eb1befad;
+  }
+  
+  /* Estilo del botón de búsqueda */
+  form.buscar button {
+    background-color: #000000; 
+    color: #ffffff; 
+    padding: 10px 20px; 
+    border: none; 
+    box-shadow: 0 6px 8px #3a25f380;
+    border-radius: 25px; 
+    margin-left: 10px; 
+    cursor: pointer; 
+    transition: 0.7s ease; 
+  }
+  
+  form.buscar button[type="submit"]:hover {
+    background-color: #000000; 
+    box-shadow: 0 3px 5px #eb1befad;
+  }
+  
+  nav form input[type="text"] {
+    
+    background-repeat: no-repeat;
+    background-position: 10px center;
+    background-size: 20px;
+    padding: 10px 10px 10px 40px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 16px;
+  }
+  
+  nav form input[type="text"]:focus {
+    outline: none;
+    border-color: #007bff;
+  }
+  
+  /* PRODUCTOS */
+  .container {
+    text-align: center;
+    box-sizing: border-box;
+    text-transform: uppercase;
+    display: block;
+    margin: 50px auto; 
+  }
+  
+  .container h2 {
+    font-weight: 800;
+    font-size: 50px;
+    border-bottom: 3px ridge;
+    padding: 40px;
+  }
+  
+  .items_products {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(250px, 1fr)); 
+    gap: 40px; 
+    margin-top: 30px;
+    padding: 10px;
+    justify-content: center;
+  }
+  
+  .product img {
+    width: 100%;
+    height: auto; 
+    aspect-ratio: 1/1; 
+    object-fit: cover;
+  }
+  .product {
+    border: 2px solid #1f1862;
+    border-radius: 20px;
+    padding: 20px; 
+    height: auto; 
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  
+  .product:hover {
+    background-color: #12113880;
+    box-shadow: 0 0 10px rgb(33, 53, 156), 0 0 15px rgb(33, 53, 156), 0 0 25px rgb(33, 53, 156), 0 0 30px rgb(33, 53, 156);
+    cursor: pointer;
+    transition: 0.7s;
+  }
+  
+  .ver {
+    color:#4c3ae780;
+    font-weight: bold;
+  }
+  
+  .ver:hover {
+      color: #eb1befad;
+      text-decoration: underline;
+      transition: 0.7s;
+  }
+  
+  .contenido{
+    text-align: justify;
+    margin: 10%;
+    padding: 40px;
+  }
+  
+  /* Estilos para nosotros */
+  #nosotros {
+      background: #1f1862;
+      text-align: justify;
+      margin: 10%;
+      padding: 40px;
+      border-radius: 8px;
+      box-shadow: 0 10px 20px #4c3cd880, 0 6px 6px  #4c3cd880
+  }
+    
+  #nosotros .container {
+      max-width: 1200px;
+      margin: 0 auto;
+  }
+    
+  #nosotros h2 {
+      text-align: center;
+      margin-bottom: 20px;
+      color: #ffffff;
+      font-size: 2.5rem; 
+      line-height: 1.2; 
+  }
+  
+  #nosotros h3 {
+      text-align: center;
+      margin-top: 2%;
+  }
+  
+  .valores {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    justify-content: center;
+    align-items: center;
+    gap: 15px;
+    padding: 20px; 
+  }
+  
+  .items {
+    padding: 10px;
+    text-align: center;
+  }
+  
+  .items img, .items h4, .items p {
+    margin: 10px;
+  }
+  
+  .iconoitems {
+    width: 40px;
+    opacity: 0.7;
+  }
+  
+  .iconoitems:hover {
+    opacity: 1;
+  }
+  
+  /* Estilos para Garantía */
+  #garantia {
+    text-align: justify;
+    margin: 10%;
+    padding: 40px;
+    border-radius: 8px;
+    border: solid #4c3cd880;
+    box-shadow: 0 10px 20px #4c3cd880, 0 6px 6px  #4c3cd880;
+  }
+  
+  #garantia .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #garantia h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 2.5rem; 
+    line-height: 1.2; 
+  }
+  
+  #garantia h3 {
+    text-align: center;
+  }
+  
+  /* Estilos para el formulario de contacto */
+  #contacto {
+    background: #1f1862;
+    text-align: justify;
+    margin: 10%;
+    padding: 40px;
+    border-radius: 8px;
+    box-shadow: 0 10px 20px #4c3cd880, 0 6px 6px  #4c3cd880;
+  }
+  
+  #contacto .container {
+    max-width: 1200px;
+    margin: 0 auto;
+  }
+  
+  #contacto h2 {
+    text-align: center;
+    margin-bottom: 20px;
+    color: #ffffff;
+    font-size: 2.5rem; 
+    line-height: 1.2;
+  }
+  
+  .contact-wrapper {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    gap: 20px;
+  }
+  
+  #contacto .grupo {
+    text-align: left;
+    margin-bottom: 5px;
+  }
+  
+  #contacto label {
+    display: block;
+    margin-bottom: 2px;
+    color: #eb1befad;
+    font-weight: bold;
+  }
+  
+  #contacto input[type="text"],
+  #contacto input[type="email"],
+  #contacto input[type="tel"],
+  #contacto select,
+  #contacto textarea,
+  #contacto input[type="file"] {
+    width: 100%; 
+    padding: 10px; 
+    border: 1px solid #ccc;
+    border-radius: 8px;
+    box-sizing: border-box;
+    margin-top: 5px;
+  }
+  
+  #contacto input[type="checkbox"] {
+    display: inline-block;
+    margin-right: 5px;
+  }
+  
+  #contacto button[type="submit"] {
+    background-color: #1f1862; 
+    color: #ffffff; 
+    padding: 10px 20px; 
+    margin-top: 2%;
+    border: none; 
+    box-shadow: 0 6px 8px #3a25f380;
+    border-radius: 25px; 
+    cursor: pointer; 
+    transition: 0.7s ease; 
+  }
+  
+  #contacto button[type="submit"]:hover {
+    box-shadow: 0 3px 5px #ffffff;
+  }
+  
+  .barra {
+    display: block;
+    color: red;
+    margin-top: 5px;
+  }
+  
+  .map iframe {
+    width: 100%;
+    height: 90%;
+  }
+  
+  /* Estilos del footer */
+  footer {
+    text-align: center;
+    padding: 20px 0;
+  }
+  
+  .logos-footer img {
+    position: relative;
+    display: inline-flex;
+    justify-content: center;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    margin: 1%;
+    opacity: 0.4;
+    transition: 0.7s;
+  }
+  
+  .logos-footer img:hover {
+    opacity: 1;
+  }
+  
+  #arriba {
+    position: relative;
+    display: inline-flex;
+    justify-content: right;
+    align-items: center;
+    width: 40px;
+    height: 40px;
+    opacity: 0.4;
+    transition: 0.5s;
+  }
+  
+  #arriba:hover {
+    opacity: 1;
+  }
+  
+  /* Media queries para dispositivos */
+  @media (max-width: 768px), (min-width: 768px) and (max-width: 1366px), (max-width: 1024px) {
+    nav ul {
+      display: none; 
+      flex-direction: column; 
+      width: 40vw; 
+      position: absolute;
+      top: 100%;
+      left: 60%;
+      background-color: #1f1862;
+      border-radius: 7px;
+    }
+  
+    nav ul li {
+      text-align: center; 
+      padding: 10px 0; 
+    }
+  
+    .menu-icon {
+      display: block; 
+      color: #ffffff;
+    }
+  
+    #menu-toggle:checked + .menu-icon + ul {
+      display: flex; 
+    }
+  
+    .logo {
+      width: 30px; 
+      height: auto;
+    }
+  
+    #nosotros h2 {
+      font-size: 2rem; 
+    }
+  
+    #garantia h2 {
+      font-size: 2rem; 
+    }
+  
+    #contacto h2 {
+      font-size: 2rem; 
+    }
+  
+    .carousel-inner {
+      padding-top: 8%;
+    }
+  
+    .carousel-control-prev,
+    .carousel-control-next {
+      display: none;
+    }
+  
+    .contact-wrapper {
+      grid-template-columns: 1fr; 
+    }
+  
+    .map {
+      order: 2; 
+    }
+  
+    .form {
+      order: 1;
+    }
+  }
