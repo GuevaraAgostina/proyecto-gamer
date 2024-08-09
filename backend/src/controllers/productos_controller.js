@@ -1,4 +1,4 @@
-const db = require("../db/db"); // traigo la conexion de la base de datos
+const db = require("../data bases/db"); // traigo la conexion de la base de datos
 
 // traigo productos
 const index = (req, res) => {
@@ -13,5 +13,7 @@ const index = (req, res) => {
     });
 };
 
-
+module.exports = {
+    index
+};
 

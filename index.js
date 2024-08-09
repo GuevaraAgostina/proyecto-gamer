@@ -10,6 +10,15 @@ app.use(express.static(path.join(__dirname, "public")));
 app.use(express.json());
 
 // llamo a las routes
+// const productosparams = require("./backend/src/routes/productos_routes");
+// app.use("/productos", productosparams);
+
+
+// Servir archivos estáticos desde la carpeta 'front'
+app.use(express.static(path.join(__dirname, './frontend')));
+
+// Rutas API
+app.use('/productos', require('./backend/src/routes/productos_routes'));
 
 
 // Puerto de escucha
