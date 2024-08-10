@@ -3,12 +3,16 @@ const express = require("express");
 const bodyParser = require("body-parser");//middleware para manejar solicitudes
 const app = express();
 const path = require("path");
+const cors = require("cors");
 
 // Middleware para servir archivos estáticos
 app.use(express.static(path.join(__dirname, "public")));
 
 // Middleware para parsear JSON
 app.use(express.json());
+
+//habilitar cors para todas las rutas
+app.use(cors());
 
 app.use(bodyParser.urlencoded({extended:true}));//los archivos json los transforma a objeto
 

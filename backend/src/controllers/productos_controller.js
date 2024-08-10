@@ -2,16 +2,19 @@ const db = require("../data bases/db"); // traigo la conexion de la base de dato
 
 // traigo productos
 const index = (req, res) => {
-    const sql = "SELECT * FROM productos";
+     const sql = "SELECT * FROM productos";
 
-    db.query(sql, (error, rows) => {
-        if (error) {
-            res.status(500).json({ error: 'Intente más tardeeeeee' });
-        }
+        db.query(sql, (error, rows) => {
+         if (error) {
+             res.status(500).json({ error: 'Intente más tardeeeeee' });
+         }
 
-        res.json(rows);
-    });
-};
+         res.json(rows);//devolvemos
+     });
+ };
+
+
+
 
 module.exports = {
     index
