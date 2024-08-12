@@ -14,7 +14,8 @@ app.use(express.json());
 //habilitar cors para todas las rutas
 app.use(cors());
 
-app.use(bodyParser.urlencoded({extended:true}));//los archivos json los transforma a objeto
+//los archivos json los transforma a objeto
+app.use(bodyParser.urlencoded({extended:true}));
 
 // llamo a las routes
 // const productosparams = require("./backend/src/routes/productos_routes");
