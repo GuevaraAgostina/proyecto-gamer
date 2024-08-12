@@ -114,7 +114,7 @@
         <div id="Productos" class="items_products">
           <div class="product">
             <div class="image">
-              <a id="categoria_videojuegos" data-id="videojuegos">
+              <a id="categoria_videojuegos" data-id="1">
                 <img src="./img/productos/videojuegos.jpg" alt="Videojuegos" />
               </a>
             </div>
@@ -127,7 +127,7 @@
           </div>
           <div class="product">
             <div class="image">
-              <a id="categoria_consolas" data-id="consolas">
+              <a id="categoria_consolas" data-id="2">
                 <img src="./img/productos/consolas.jpg" alt="Cónsolas" />
               </a>
             </div>
@@ -140,7 +140,7 @@
           </div>
           <div class="product">
             <div class="image">
-              <a id="categoria_sillasgamer" data-id="sillas-gamer">
+              <a id="categoria_sillasgamer" data-id="3">
                 <img src="./img/productos/sillas.jpg" alt="Sillas gamer" />
               </a>
             </div>
@@ -153,7 +153,7 @@
           </div>
           <div class="product">
             <div class="image">
-              <a data-id="computacion">
+              <a data-id="4" id="categoria_computacion">
                 <img src="./img/productos/computacion.jpg" alt="Computación" />
               </a>
             </div>
@@ -379,12 +379,12 @@
     <script>
       document.addEventListener("DOMContentLoaded", () => {
         const categorias = document.querySelectorAll(".image a");
-
+        
         categorias.forEach((categoria) => {
           categoria.addEventListener("click", (event) => {
             event.preventDefault(); // Evita el comportamiento predeterminado del enlace
             const idCategoria = categoria.getAttribute("data-id"); // Obtén el ID de la categoría
-            window.location.href = `productos.html?${idCategoria}`; // Redirige con el ID de la categoría
+            window.location.href = `productos.html?id=${idCategoria}`; // Redirige con el ID de la categoría
           });
         });
       });

@@ -38,7 +38,7 @@ const show = (req, res) => {
         }
 
         // Devolver los resultados encontrados
-        res.json(rows[0]); // Suponiendo que id_productos es único, devolver el primer resultado
+        res.json(rows); // devuelvo el array completo de productos
     });
 };
 
